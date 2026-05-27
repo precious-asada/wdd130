@@ -1,3 +1,10 @@
+:root {
+    --main-border: 1px solid black;
+    --main-height: auto;
+    --image-padding: 2px;
+    --text-align: center;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -15,9 +22,9 @@ h1 {
 
 img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
+    height: var(--main-height);
+    border: var(--main-border);
+    padding: var(--image-padding);
     box-shadow: 0 0 30px gray;
 }
 
@@ -32,28 +39,28 @@ main {
 aside {
     width: 300px;
     margin: 20px;
-    border: 1px solid black;
+    border: var(--main-border);
     padding: 15px;
     background-color: lightgray;
     color: black;
-    text-align: center;
+    text-align: var(--text-align);
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--main-height);
 }
 
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--main-height);
+    border: var(--main-border);
     padding: 2px;
     box-shadow: 0 0 30px darkgrey;
 }
 
 footer {
     margin-top: 20px;
-    border-top: 1px solid black;
-    text-align: center;
+    border-top: var(--main-border);
+    text-align: var(--text-align);
 }
